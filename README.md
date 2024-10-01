@@ -80,10 +80,11 @@ Usage
 
 	1.	To train and run the LSTM model for SMCI stock prediction, use:
       python SMCI_5ltsm_prediction.py
-  2.	To forecast SPY stock prices using SARIMA, run:
+        2.	To forecast SPY stock prices using SARIMA, run:
       python SARIMA_SPY_Forecast.py
 	3.	Use the dailyreturns.py script to calculate daily percentage returns for the stocks:
       python dailyreturns.py
+
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
