@@ -85,6 +85,21 @@ Usage
 	3.	Use the dailyreturns.py script to calculate daily percentage returns for the stocks:
                 python dailyreturns.py
 
+StockDataToCSV.py
+
+The StockDataToCSV.py script is designed to fetch daily stock price data from the Alpha Vantage API for a predefined list of stock symbols. The data is then saved into separate CSV files for each symbol. The script automates the process of data retrieval and storage, making it easier to work with historical stock data for analysis or model training.
+
+How It Works:
+
+	1.	API Request: The script uses the Alpha Vantage API to retrieve the daily time series stock data for a list of stock symbols, which currently includes companies like Intel (INTC), Tesla (TSLA), and Microsoft (MSFT).
+	2.	Data Parsing: The script extracts relevant data such as the open, high, low, close prices, and trading volume from the API response.
+	3.	CSV Output: The data is written to CSV files named after the stock symbols (e.g., INTC_stock_prices.csv, TSLA_stock_prices.csv). These files contain daily historical prices and volumes for each stock.
+
+To run the script, ensure you have the necessary dependencies (requests, csv), and execute the file with: python StockDataToCSV.py
+
+Footnote: The API key used in this script is for Alpha Vantage, which provides free API access for stock market data. Note that there is a limit on the number of API calls per minute in the free tier. If you encounter issues with the API, you may need to wait and rerun the script or consider upgrading to a premium API key.
+
+
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
